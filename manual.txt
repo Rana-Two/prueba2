@@ -1,0 +1,167 @@
+MANUAL DEL SISTEMA DE ASISTENCIA ESCOLAR
+=====================================
+
+1. ESTRUCTURA DEL SISTEMA
+------------------------
+El sistema está organizado en las siguientes carpetas principales:
+- /assets: Contiene archivos CSS, imágenes y otros recursos
+- /config: Archivos de configuración del sistema
+- /includes: Funciones y utilidades comunes
+- /views: Vistas organizadas por rol de usuario
+  - /director: Vistas para el director
+  - /docente: Vistas para los docentes
+  - /alumno: Vistas para los alumnos
+  - /auxiliar: Vistas para los auxiliares
+
+2. ROLES DE USUARIO
+------------------
+El sistema maneja 4 tipos de usuarios:
+- Director: Acceso total al sistema
+- Docente: Gestiona sus clases y asistencias
+- Alumno: Ve sus clases y asistencias
+- Auxiliar: Registra asistencias
+
+3. FUNCIONALIDADES POR ROL
+-------------------------
+
+3.1 DIRECTOR
+-----------
+- Dashboard con estadísticas generales
+- Gestión de usuarios (docentes, alumnos, auxiliares)
+- Gestión de clases
+- Reportes y estadísticas
+- Perfil de usuario
+
+3.2 DOCENTE
+----------
+- Dashboard con sus clases
+- Gestión de asistencias para sus clases
+- Ver reportes de asistencia
+- Perfil de usuario
+
+3.3 ALUMNO
+---------
+- Ver sus clases asignadas
+- Ver su historial de asistencias
+- Perfil de usuario
+
+3.4 AUXILIAR
+-----------
+- Registrar asistencias
+- Ver lista de alumnos
+- Perfil de usuario
+
+4. PÁGINAS PRINCIPALES
+---------------------
+
+4.1 Página de Inicio (index.php)
+- Formulario de inicio de sesión
+- Validación de credenciales
+- Redirección según rol
+
+4.2 Dashboard del Director
+- Estadísticas generales
+- Accesos rápidos a funciones principales
+- Gráficos de asistencias
+
+4.3 Gestión de Usuarios
+- Lista de usuarios por rol
+- Formulario para agregar usuarios
+- Opciones para editar y eliminar
+
+4.4 Gestión de Clases
+- Lista de clases
+- Asignación de docentes
+- Gestión de alumnos por clase
+
+4.5 Reportes
+- Estadísticas de asistencia
+- Gráficos de tendencias
+- Clases más populares
+
+5. CARACTERÍSTICAS TÉCNICAS
+-------------------------
+
+5.1 Seguridad
+- Validación de roles
+- Protección contra SQL injection
+- Encriptación de contraseñas
+- Sesiones seguras
+
+5.2 Base de Datos
+- Tablas principales:
+  * usuarios
+  * roles
+  * clases
+  * alumnos_clases
+  * asistencias
+
+5.3 Interfaz de Usuario
+- Diseño responsivo con Bootstrap 5
+- Iconos de Font Awesome
+- Gráficos con Chart.js
+- Modales para formularios
+
+6. INSTALACIÓN
+------------
+1. Configurar el archivo config.php con los datos de la base de datos
+2. Ejecutar el script de instalación (install.php)
+3. Crear un usuario director inicial
+4. Acceder al sistema con las credenciales del director
+
+7. NAVEGACIÓN
+-----------
+- Barra de navegación superior con menú desplegable
+- Accesos rápidos en el dashboard
+- Breadcrumbs para navegación
+- Botones de acción contextuales
+
+8. REPORTES Y ESTADÍSTICAS
+-------------------------
+- Total de usuarios por rol
+- Total de clases activas
+- Registros de asistencia
+- Gráfico de asistencias semanales
+- Lista de clases más populares
+
+9. GESTIÓN DE ASISTENCIAS
+-----------------------
+- Registro de asistencia por clase
+- Estados: presente, ausente, justificado
+- Observaciones opcionales
+- Historial de asistencias
+
+10. PERSONALIZACIÓN
+-----------------
+- Nombre del sistema configurable
+- Colores y estilos personalizables
+- Mensajes del sistema configurables
+
+11. MANTENIMIENTO
+---------------
+- Limpieza de sesiones expiradas
+- Respaldo de base de datos
+- Logs de actividad
+- Actualización de datos
+
+12. CONSIDERACIONES TÉCNICAS
+--------------------------
+- PHP 7.4 o superior
+- MySQL 5.7 o superior
+- Servidor web Apache/Nginx
+- Navegadores modernos compatibles
+
+13. SOPORTE
+---------
+Para soporte técnico o consultas:
+- Revisar la documentación
+- Contactar al administrador del sistema
+- Reportar problemas en el sistema de tickets
+
+14. ACTUALIZACIONES
+----------------
+El sistema se actualiza periódicamente con:
+- Mejoras de seguridad
+- Nuevas funcionalidades
+- Corrección de errores
+- Optimizaciones de rendimiento
